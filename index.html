@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Altran_test</title>
+    <link href="https://bootswatch.com/4/sandstone/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cute+Font" rel="stylesheet">
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAABUdHYAP1DiANjg9wCIstwA9/r8APv8+QAySNQA/f38AGNgRAD//v8AO1O/AJbB0wB8eWEAMFWHAF5qxAB9lqUAR2VLAGBsaAAvN88ARm5dAGaQpgAZL8oA+/z6ADlTVQD8/f0AkLvUALrKwQBGTUMA/f39AP79/QAcNcoAb5eyABopngDr8/sAYXN1AHWHjAA6LyEA/Pv4APr9/gD7/f4A/P3+AFFJLwD9/f4A/v3+AP/9/gBEYu0AGC8iANrZ0wAvRTYAZmFSAJ3D0gB5e3IAU1JKAHV+ewAuQbkAaZbmAFN18ABZW0oAEykaADRHwgD3+v8A/PzzAEVJQgD6/PwA+/z8APz8/AD9/PwA/v3/ADlM0QB2lKIAV3JiAJamqgAmRNUA9vv6AFWF2QBjg8EAxNHzAN/m+wD7/P0A/fz9AEVk4wBuk6AA//z9AP7//QBeeZIAhaq3AHSZqQCaw90AYm1dAD5qtwBfVDcAZYqYALbb7gCOs8kA5+bhADlgmgB5blcA/vz+AFBMMgBWRywAfI2PAHWSngDn8fAAdoezAGCAlgCKrbgAUHTVAGdnVQA4Y8cAWVk+AERCMAD09v8ArbbkAPn89gD2/vwA4unrAPr9+QD7+/wA/P78AP7+/AD//vwA//z/AISovADl8/cALz9DANXg2gBUTjkA0uTvAIuy0QB6nroA+fr6AF5eRQCYtsIA+f79APv9+gD9/foA/f79AFR8ngD+/v0AZmJRAFlmbwBaUTEAHTSPAIaYjgA5SpEATFpVAPH6+wBHdbcA+vr7APv6+wD9+/4A+/7+ADdMxAD++/4A/P7+AP3+/gD+/v4A//7+AICpwQAuRzkAV0o4AHOXpwCIrbsAW04yAO3v/wDp9f8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAK5yKigV1IhdHfABzB5ucnJycK0MEfZ8uOjATGhacnJwrnIp3GDltKWKDEI9JnZucnJyclTN+o2NajQhGZk8YHYqcJy+LoG4bkRFrWIyVQSqbippeJD5FoRQfVTFgTwmIm4qXJTQjUaJWZQs1DEKGQyuKJochD4RpXTKeZD2InIgrnHl0Z2hUW4BXGXs/HJycnIosgpCBXwMNiXpyTpycnIqKnZSljllsSjdcdiucnJwrinhhkiAKapNLfyidnJyciiuIm282FTgScIWZHJycnJycih2kOx5QmDx2nJycnJycnIpSTURIAUyWiiucnJycnIpTKwIGLQ5xQCoqnJycnAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=" rel="icon" type="image/x-icon" />
+    <link href="styles/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center my-5 title">Find a Gnomo</h1>
+        <div class="row bg">
+                <form class="col-10 col-md-8" id="form">
+                    <!--searcher:-->
+                    <div class="row">
+                            <div class="form-group">
+                                <select id="gnomo" class="form-control">
+                                    <option value="" disabled selected>Select...</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" class="btn btn-primary" value="Search">
+                            </div>
+                    </div>
+    
+                    <div class="pannel-results row justify-content-center mt-5">
+                        <!-- Three possible answers: -->
+                        
+                        <!--1) spinner-->
+                        <div id="spinner__container">
+                            <div class="spinner-border text-success"></div>
+                        </div>
+                        
+                        <!--2) error message-->
+                        <div class="message col-12"></div>
+
+                        <!--3) results-->
+                        <div id="result" class="col-12"></div>
+                    </div><!--end of results pannel-->
+                    
+                </form>
+            </div> 
+            
+        <script src="js/logic.js"></script>
+        <script src="js/view.js"></script>
+        <script src="js/main.js"></script>
+    </div>
+</body>
+
+</html>

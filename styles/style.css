@@ -1,0 +1,117 @@
+
+body {
+  display: 'flex';
+  justify-content: 'center';
+  background: #ffa6004f; /* old browsers */
+  background: -webkit-linear-gradient(18deg, black, rgb(5, 8, 49), #201953); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(10deg, black, rgb(5, 8, 49), #201953); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-animation: Gradient 12s ease infinite;
+  -moz-animation: Gradient 12s ease infinite;
+  animation: Gradient 12s ease infinite;
+  background-size: 50000vw 1500vh;
+  }
+
+  @-webkit-keyframes Gradient {
+    0% { background-position: 0% 50% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0% 50% }
+  }
+  
+  @-moz-keyframes Gradient {
+    0% { background-position: 0% 50% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0% 50% }
+  }
+  
+  @keyframes Gradient {
+    0% { background-position: 0% 50% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0% 50% }
+  }
+
+  .container {
+    padding-bottom: 35px;
+  }
+  
+  .bg {
+    background-image: url("../img/a3488a0bf14b280db6a96a7814efd1b46789.png");
+    background-size: auto;
+  }
+
+  h1 { 
+    color: white;
+    font-family: 'Cute Font', cursive;
+    font-weight: 800;
+    font-size: 55px;
+  }
+  form {
+    margin: 50px auto;
+  }
+    
+  .row {
+    display: 'flex';
+    justify-content: center;
+    align-items: center;
+    width: '100%';
+    margin: 0px;
+  }
+
+  .form-group {
+    margin: 5px;
+  }
+
+  .card {
+    flex-direction: row;
+    background: #38314bea;
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+  }
+  
+  .image__container {
+    border-bottom: 5px solid #66c3e7;
+  }
+  
+  .card img {
+    min-width: 130px;
+    width: 15%;
+    height: auto;
+    border-radius: 5px;
+    border: 5px solid white;
+    margin: 10%;
+  }
+  
+  .card-body h2 {
+    color: rgb(156, 201, 231);
+    font-size: 5vw;
+    font-weight: 700;
+  }
+  
+  .card-left-text {
+    color: white;
+    font-family: 'Franklin Gothic Medium';
+  }
+  
+  .message {
+    color: white;
+  }
+  #result {
+    text-align: center;
+  }
+  .btn {
+    width: 80px;  
+  }
+  #spinner__container {
+    display: none;
+  } 
+
+  a {
+    color: hsl(197, 57%, 52%) !important;
+    text-decoration: underline !important;
+    font-weight: 700;
+    cursor: pointer;
+  }
